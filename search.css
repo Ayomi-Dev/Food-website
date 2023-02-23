@@ -1,0 +1,195 @@
+.searchPage{
+    display: none;
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    position: fixed;
+    width: 50%;
+    z-index: 9999;
+    left: 25%;
+    overflow-y: auto;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+}
+.searchPage.active{
+    display: block;
+}
+.searchItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.foodie{
+    display: flex;
+    width: 100%;
+}
+.result{
+    color: #fff;
+    width: 100%;
+    border: 1px #777 solid;
+    height: 40px;
+    margin: 7px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+.result > span{
+    margin-right: 5px;
+}
+.result img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .searchPage{
+        width: 100%;
+        left: 0;
+    }
+    .result{
+        font-size: 14px;
+    }
+}
+.scrollTop{
+    position: fixed;
+    bottom: 20px;
+    z-index: 999;
+    height: 50px;
+    width: 50px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility .5s;
+}
+.scrollTop.active{
+    opacity: 1;
+    visibility: visible;
+}
+.scrollTop button{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    background: var(--clr-sech2);
+    color: var(--icon-color);
+}
+.aboutUs{
+    width: 95%;
+    height: 100vh;
+    margin: 0 auto;
+}
+.aboutUs .segment{
+    display: flex;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs .segment .text{
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    transform: translateX(50px);
+    z-index: 222;
+    padding: 10px;
+    color: var(--icon-color);
+}
+.aboutUs .segment .text h2{
+    margin:0 0 20px 20px;
+    position: relative;
+}
+.aboutUs .segment .text h2::before{
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 5px;
+    background: #dc143d;
+    bottom: -8px;
+    left: 0;
+}
+.aboutUs .segment .text p{
+    font-style: italic;
+    font-size: small;
+}
+.aboutUs .segment .image{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+.aboutUs .segment .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.aboutUs .segment .image .layover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+@media screen and (min-width: 1280px) {
+    .aboutUs{
+        height: 70vh;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .aboutUs{
+        height: 40vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .aboutUs{
+        height: 50vh;
+    }
+    .aboutUs .segment .image{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 540px) {
+    .aboutUs{
+        height: 70vh;
+    }
+    .aboutUs .segment{
+        width: 100%;
+        margin: 0;
+    }
+    .aboutUs .segment .text{
+        transform: translateX(0);
+    }
+    .aboutUs .segment .image{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .aboutUs{
+        height: 90vh;
+    }
+    .aboutUs .segment{
+        flex-direction: column;
+    }
+    .aboutUs .segment .image, .aboutUs .segment .text{
+        width: 100%;
+        margin: 10px 0;
+    }
+}

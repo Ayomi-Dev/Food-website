@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Food</title>
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,
+    200&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5dd300959c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,200;1,500&family=Poppins:ital,wght@0,200;1,200&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="search.css">
+    
+</head>
+<body>
+    <div class="scrollTop">
+        <button><i class="fa fa-arrow-up-long"></i></button>
+    </div>
+    <div class="container">
+        <section class="navigation">
+            <nav>
+                <a href="" class="logo">
+                    <span>Z</span>
+                    <span>e</span>
+                    <span>N</span>
+                </a>
+                <form action="" id="searchBar">
+                    <input type="search" name="search" id="search" data-search>
+                    <i class="fa fa-list"></i>
+                </form>
+                <div class="navMenu">
+                    <div class="icons">
+                        <i class="fa fa-search"></i>
+                        <div class="cartCount cartBtn" id="listed">
+                            <i class="fa fa-cart-shopping"></i>
+                            <div class="cartNumber"></div>
+                        </div>
+                        <i class="fa fa-moon">.</i>
+                    </div>
+                </div>
+                <!-- <span class="notify">Item already added to cart.</span> -->
+            </nav>
+            
+        </section>
+        <section class="cartPage">
+            <h2 class="cartHeader">Here are your Cart items</h2>
+            <div class="sections">
+                <h2>ITEM</h2>
+                <h2>PRICE</h2>
+                <h2>QUANTITY</h2>
+            </div>
+
+            <div class="cartItems">
+                
+            </div>
+
+            <div class="update">
+                <p>Total Items: <span class="totalItems"></span></p>
+                <p>Total Price: <span class="totalPrice"></span></p>
+            </div>
+            <div class="purchase">
+                <button class="checkOutBtn">CheckOut</button>
+                <span class="response"></span>
+            </div>
+        </section>
+        <section class="favoritePage">
+            <h2>Your favs are ready. <span>Order Now!</span></h2>
+            <div class="favContent">
+                <div class="myItems">
+                    <div class="itemImg">
+                        <img src="images/sauce.png" alt="">
+                    </div>
+                    <div class="itemDetails">
+                        <div class="itemName">
+                            <p class="name">Crayfish</p>
+                            <p class="price">$10</p>
+                        </div>
+                        <div class="addItem">
+                            <i class="fa fa-cart-shopping"></i>
+                            <i class="fa fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SEARCH RESULTS PAGE  -->
+        <section class="searchPage" data-search-page>
+            <div class="searchItems" data-container>
+            </div>
+        </section>
+        
+
+        <!-- ----------HEADER SECTION ---------------- -->
+        <section class="header">
+            <input type="radio" name="radio" id="radio1">
+            <input type="radio" name="radio" id="radio2">
+            <input type="radio" name="radio" id="radio3">
+            <div class="headliners">
+                <div class="header1">
+                    <div class="intro-text">
+                        <img src="images/Star 1.png" alt="">
+                        <h2>You know what's <br> better than blabbering <br> about food? <br>
+                            <span>Eating!</span> 
+                        </h2>
+                        <p>Your happy place is our happy place. <br>
+                            Welcome to the best restaurant in town, serving
+                            everything from burger and fries to pasta and pizza, and the
+                            hottest desserts. <br>
+                            <span>Craving Now???</span> Order before the close of today.
+                        </p>
+                        <div class="buttons">
+                            <button><p href="">Order Now</p></button>
+                            <button><p href="">Learn More...</p></button>
+                        </div>
+                    </div>
+    
+                    <div class="img">
+                        <img src="images/image.png" alt="">
+                        <div class="text">
+                            <p><span>"</span>  One of the best in town I've been to. The burgers
+                                are amazing. Well garnished and spiced. Recommend them
+                                 anyday anytime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="headlines header2">
+                    <div class="headerImg">
+                        <img src="images/header.jpeg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <div class="texts">
+                            <h1>For the love of delicious foods.</h1>
+                            <p>You really don't want to leave <br>
+                                 the cravings unsatisfied. <br>
+                                Come get a taste you will <br> always remember.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="headlines header3">
+                    <div class="headerImg">
+                        <img src="images/noodles.png" alt="">
+                    </div>
+                    <div class="overlay">
+                        <div class="texts">
+                            <h1>Food that sets you in a good mood.</h1>
+                            <p> Feel the joy of mouthwatering <br>
+                                food and fulfill your comfort <br>
+                                 food cravings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="animation-manual">
+                <label for="radio1" class="manual"></label>
+                <label for="radio2" class="manual"></label>
+                <label for="radio3" class="manual"></label>
+            </div>
+        </section>
+
+        <!-- ----------------ABOUT SECTION------------- -->
+
+        <section class="aboutUs">
+            <div class="segment">
+                <div class="text">
+                    <h2>Curious to know us?</h2>
+                    <div class="aboutText">
+                        <p>We are one of the fastest growing online food vendors.
+                            At ZEN's food, we believe there are more valuable ways to satisfy
+                            that hunger when it comes to food and that is why we are
+                            obsessive about presnting mouth-watering foods, regardless if
+                            it means going the extra mile.
+                            We understand the difficulty and time constraint in getting those preferred meals
+                            prepared, that is why we help to provide wide range of delicacies from burgers,
+                            pastas, cakes, to different Nigerian foods delivered to your door step at different
+                            time of the day.
+                         </p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="vendor.jpeg" alt="">
+                    <div class="layover"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------SECTION FOR RECOMMENDED FOODS------------------ -->
+
+        <div class="recommend">
+            <h2>Recommended for you</h2>
+            <div class="recommItem">
+            </div>
+            <div class="seeMore">
+                <button id="seeMore">See More</button>
+            </div>
+        </div>
+    
+        <!-- ----------------------------ADVERT SECTION  ----------------------------->
+        <section class="advert">
+            <div class="content">
+                <img src="images/bkgrd.png" alt="">
+                <div class="column">
+                    <div class="sect1">
+                        <img src="images/advert.png" alt="">
+                    </div>
+                    <div class="sect2">
+                        <h1>Order Food Seamlessly in One Click</h1>
+                        <p>Get started by signing up and ordering <br> your preferred meal any
+                            have it delivered <br> to you within few minutes.
+                        </p>
+                        <div class="logos">
+                            <a href="" class="links">
+                                <i class="fa-brands fa-apple"></i>
+                                <p>Click to download <br> IOS app</p>
+                            </a>
+                            <a href="" class="links">
+                                <i class="fa-brands fa-google-play"></i>
+                                <p>Click to download <br> android App</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--------------------- CATEGORY SECTION -------------------------------------->
+        <section class="catMenu">
+            <h2>Categories</h2>
+            <ul class="tabs">
+                <li class="tabLink active" id="top">Top Rated</li>
+                <li class="tabLink" id="snack">Snacks</li>
+                <li class="tabLink" id="pasta">Pastas</li>
+                <li class="tabLink" id="cake">Cakes</li>
+                <li class="tabLink" id="african">African</li>
+            </ul>
+        </section>
+
+        <section class="category">
+            <div class="tabContainer">
+                <div class="top"></div>
+                <div class="snacks"></div>
+                <div class="cake"></div>
+                <div class="pasta"></div>
+                <div class="african"></div>
+            </div>
+        </section>
+
+        <!-- ----------------------CUSTOMER REVIEWS SECTION -------------------------->
+        <section class="review">
+            <div class="reviewContent">
+                <div class="col1">
+                    <img src="images/review.png" alt="">
+                </div>
+                <div class="col2">
+                    <h2>Our customers love and rate our Foods. <br>
+                        See what they say.
+                    </h2>
+                    <div class="profile">
+                        <div class="carousel" data-carousel>
+                            <div class="buttons">
+                                <button class="button prev" data-carousel-button="prev"><i class="fa fa-arrow-left-long"></i></button>
+                                <button class="button next" data-carousel-button="next"><i class="fa fa-arrow-right-long"></i></button>
+                            </div>
+                            <div class="carousel-item" data-slides>
+                                <div class="card" data-active>
+                                    <div class="imgArea"><img src="rev1.jpeg" alt=""></div>
+                                    <div class="box1">
+                                        <div class="mainText">
+                                            <strong>Clara, Lagos</strong>
+                                            <p>Give yourself a real treat and visit Zens place
+                                                It's a very lovely place to be. Their service is unmatched.
+                                                The food?..oh my God! One of the best you can ever get around. 
+                                            </p>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" data-active>
+                                    <div class="imgArea"><img src="rev2.jpeg" alt=""></div>
+                                    <div class="box1">
+                                        <div class="mainText">
+                                            <strong>Julie, UK</strong>
+                                            <p>Trust me, you can't get the best of delicious foods anywhere
+                                                else than Zen's food. I still can't get enough of the mouth-watering
+                                                tastes from their foods.
+                                            </p>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" data-active>
+                                    <div class="imgArea"><img src="rev3.jpeg" alt=""></div>
+                                    <div class="box1">
+                                        <div class="mainText">
+                                            <strong>Sandy, Abuja</strong>
+                                            <p>At first, I wasn't expecting much but after my expereince with these guys
+                                                I don't thimk there's anywhere else I'd love to order my meals from
+                                                whenever I'm in Nigeria. I love their sense of urgency.
+                                            </p>
+                                        </div>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------- NEWSLETTER SECTION ----------------------->
+        <section class="news">
+            <div class="content">
+                <div class="imgClass"><img src="images/Newsletter.png" alt=""></div>
+                <div class="overlay">
+                    <div class="inner">
+                        <h1>Join our Newsletter and <br> Get discount up to <span>35%</span></h1>
+                        <div class="input">
+                            <input class="email" type="email" name="email" placeholder="Enter your Email">
+                            <input class="submit" type="submit" name="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --------------------FOOTER SECTION------------------------- -->
+        <section class="footer">
+            <div class="footerContent">
+                <div class="logo">
+                    <a href="" class="logo">
+                        <span>Z</span>
+                        <span>e</span>
+                        <span>N</span>
+                    </a>
+                </div>
+                <div class="about">
+                    <div class="info">
+                        <a href="#">Shop</a>
+                        <i class="fa fa-grip-lines-vertical"></i>
+                        <a href="#">Our story</a>
+                        <i class="fa fa-grip-lines-vertical"></i>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+                <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    <p>:+2347036532710</p>
+                </div>
+                <div class="mail">
+                    <i class="fa fa-at"></i>
+                    <p>:ayomideolakunle1@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+    <script src="food.js" ></script>
+    <script src="favorite.js" ></script>
+        
+</body>
+</html>
