@@ -29,7 +29,7 @@ ScrollReveal({
     reset: true,
     distance: '60px',
     duration: 2500,
-    delay: 400
+    delay: 200
 
 });
 ScrollReveal().reveal('.intro-text, .sect1, .col1 img', { delay: 400, origin: 'left' });

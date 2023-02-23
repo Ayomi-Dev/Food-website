@@ -17,7 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,200;1,500&family=Poppins:ital,wght@0,200;1,200&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="search.css">
-    
+    <script src="food.js" defer></script>
+    <script src="favorite.js" defer></script>
 </head>
 <body>
     <div class="scrollTop">
@@ -26,7 +27,7 @@
     <div class="container">
         <section class="navigation">
             <nav>
-                <a href="" class="logo">
+                <a href="#header" class="logo">
                     <span>Z</span>
                     <span>e</span>
                     <span>N</span>
@@ -78,7 +79,7 @@
         
 
         <!-- ----------HEADER SECTION ---------------- -->
-        <section class="header">
+        <section class="header" id="header">
             <input type="radio" name="radio" id="radio1">
             <input type="radio" name="radio" id="radio2">
             <input type="radio" name="radio" id="radio3">
@@ -96,8 +97,8 @@
                             <span>Craving Now???</span> Order before the close of today.
                         </p>
                         <div class="buttons">
-                            <a href="#aboutUs"><button><p>Learn more</p></button></a>
-                            <a href="#"><button><p>Order Now</p></button></a>
+                            <a href="#aboutUs"><p>Learn more</p></a>
+                            <a href="#"><p>Order Now</p></a>
                         </div>
                     </div>
     
@@ -158,7 +159,7 @@
                         <p>We are one of the fastest growing online food vendors.
                             At ZEN's food, we believe there are more valuable ways to satisfy
                             that hunger when it comes to food and that is why we are
-                            obsessive about presnting mouth-watering foods, regardless if
+                            obsessive about offering mouth-watering foods, regardless if
                             it means going the extra mile.
                             We understand the difficulty and time constraint in getting those preferred meals
                             prepared, that is why we help to provide wide range of delicacies from burgers,
@@ -219,7 +220,7 @@
         <section class="catMenu">
             <h2>Categories</h2>
             <ul class="tabs">
-                <li class="tabLink active" id="top">Top Rated</li>
+                <li class="tabLink active" id="top">Top</li>
                 <li class="tabLink" id="snack">Snacks</li>
                 <li class="tabLink" id="pasta">Pastas</li>
                 <li class="tabLink" id="cake">Cakes</li>
@@ -384,9 +385,6 @@
 
 
     
-
-    <script src="food.js" ></script>
-    <script src="favorite.js" ></script>
         
 </body>
 </html>

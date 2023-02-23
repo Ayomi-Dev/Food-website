@@ -421,6 +421,7 @@ body.dark{
     align-items: center;
     position: relative;
     background: var(--background);
+    margin-top: 70px;
 }
 .container .header .headliners{
     width: 95%;
@@ -577,7 +578,7 @@ body.dark{
     font-size: smaller;
 }
 .container .header .header1 .intro-text h2 span{
-    color: var(--clr-color);
+    color: #139136;
     font-size: 1.7rem;
     padding: 5px 0;
 }
@@ -588,7 +589,7 @@ body.dark{
     height: 70px;
     margin-top: 5%;
 }
-.container .header .header1 .intro-text .buttons a button{
+.container .header .header1 .intro-text .buttons a{
     padding: 10px;
     width: 120px;
     border: none;
@@ -600,32 +601,32 @@ body.dark{
     height: 50%;
     position: relative;
 }
-.container .header .header1 .intro-text .buttons a button:nth-child(1) p,
-.container .header .header1 .intro-text .buttons a button:nth-child(2) p{
+.container .header .header1 .intro-text .buttons a:nth-child(1) p,
+.container .header .header1 .intro-text .buttons a:nth-child(2) p{
     z-index: 2;
     position: relative;
     font-weight: bold;
 }
-.container .header .header1 .intro-text .buttons a button:nth-child(1) p{
+.container .header .header1 .intro-text .buttons a:nth-child(1) p{
     color: #fff;
 }
-.container .header .header1 .intro-text .buttons a button:nth-child(2) p{
+.container .header .header1 .intro-text .buttons a:nth-child(2) p{
     color: #139136;
 }
-.container .header .header1 .intro-text .buttons a button:nth-child(1){
+.container .header .header1 .intro-text .buttons a:nth-child(1){
     background: #139136;
     color: #fff;
     margin-right: 20px;
     position: relative;
 }
-.container .header .header1 .intro-text .buttons a button:nth-last-child(1){
+.container .header .header1 .intro-text .buttons a:nth-last-child(1){
     background: #bddbc5;
     color: #139136;
     border: 1px solid #139136;
     transition: border 0.5s, color 0.5s;
 }
-.container .header .header1 .intro-text .buttons a button:nth-child(1)::after,
-.container .header .header1 .intro-text .buttons a button:nth-child(2)::after
+.container .header .header1 .intro-text .buttons a:nth-child(1)::after,
+.container .header .header1 .intro-text .buttons a:nth-child(2)::after
 {
     content: '';
     position: absolute;
@@ -637,15 +638,15 @@ body.dark{
     transition: width 0.5s, background 0.5s;
     background: #dc143d;
 }
-.container .header .header1 .intro-text .buttons a button:hover:nth-child(1)::after,
-.container .header .header1 .intro-text .buttons a button:hover:nth-last-child(1)::after
+.container .header .header1 .intro-text .buttons a:hover:nth-child(1)::after,
+.container .header .header1 .intro-text .buttons a:hover:nth-last-child(1)::after
 {
     width: 100%;
 }
-.container .header .header1 .intro-text .buttons a button:hover:nth-last-child(1) p{
+.container .header .header1 .intro-text .buttons a:hover:nth-last-child(1) p{
     color: #fff;
 }
-.container .header .header1 .intro-text .buttons a button:hover:nth-last-child(1){
+.container .header .header1 .intro-text .buttons a:hover:nth-last-child(1){
     border: none;
 }
 .container .header .header1 .img{
