@@ -9,6 +9,7 @@
     overflow-y: auto;
     border-radius: 5px;
     scroll-behavior: smooth;
+    margin-top: 70px;
 }
 .searchPage.active{
     display: block;
