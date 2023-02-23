@@ -16,6 +16,9 @@
     --icon-color: #131313;
     --itemBkrnd: #fff;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     display: flex;
     width: 100%;
@@ -43,7 +46,7 @@ body.dark{
     height: 70px;
     width: 100%;
     top: 0;
-    position: sticky;
+    position: fixed;
     z-index: 99999999;
     background: var(--itemBkrnd);
 }
@@ -185,11 +188,10 @@ body.dark{
 {
     display: flex;
 }
-.container  .cartPage,
-.container  .favoritePage
+.container .cartPage
 {
     overflow-y: auto;
-    height: 100%;
+    height: 80vh;
     position: fixed;
     width: 50%;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
@@ -199,6 +201,7 @@ body.dark{
     top: -1000px;
     opacity: 0;
     transition: top 0.5s, opacity 0.5s;
+    scroll-behavior: smooth;
 }
 .cartPage h2{
     margin: 10px 0;
@@ -290,7 +293,7 @@ body.dark{
 }
 .cartPage .purchase{
     width: 50%;
-    margin: auto;
+    margin: 20px auto;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -310,82 +313,8 @@ body.dark{
 .cartPage .purchase button:hover{
     color: #fff;
     background: #dc143d;
-}
-.container  .favoritePage h2{
-    color: #fff;
-    text-align: center;
-    margin: 15px 0;
-}
-.container  .favoritePage h2 span{
-    color: #29c756;
-}
-.container  .favoritePage .favContent{
-    width: 95%;
-    margin: 10px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
-}
-.container  .favoritePage .favContent .myItems{
-    display: flex;
-    flex-direction: column;
-    width: 140px;
-    position: relative;
-    height: 160px;
-    
-}
-.container  .favoritePage .favContent .myItems .itemImg{
-    margin: 5px auto;
-    width: 80px;
-    height: 70px;
-    border-radius: 5px;
-    border: 1px solid #615e5e;
-    z-index: 2;
-}
-.container  .favoritePage .favContent .myItems .itemImg img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-.container  .favoritePage .favContent .myItems .itemDetails{
-    width: 96%;
-    margin: 0 2px;
-    position: absolute;
-    bottom: 30px;
-    height: 70px;
-    border-radius:5px;
-    border: 1px #615e5e solid;
-    backdrop-filter: blur(10px);
-}
-.container  .favoritePage .favContent .myItems .itemDetails .itemName,
-.container  .favoritePage .favContent .myItems .itemDetails .addItem
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin-top: 20px;
-    margin: 15px auto;
-    color: #fff;
-}
-.container  .favoritePage .favContent .myItems .itemDetails .itemName p {
-    font-size: 12px;
-}
-.container  .favoritePage .favContent .myItems .itemDetails .addItem i{
-    color: #66d184;
-    transition: color 0.5s;
-}
-.container  .favoritePage .favContent .myItems .itemDetails .addItem i:nth-child(1):hover{
-    color: #139136;
-}
-.container  .favoritePage .favContent .myItems .itemDetails .addItem i:nth-child(2):hover{
-    color: #dc143d;
-}
-
-
-    
-.container  .cartPage.active,
-.container  .favoritePage.active
+}    
+.container  .cartPage.active
 {
     opacity: 1;
     top: 70px;
@@ -873,6 +802,14 @@ body.dark{
     flex-direction: column;
     box-shadow: 0px 1px 2px 2px #cecaca;
     background: var(--itemBkrnd);
+    position: relative;
+}
+.container .recommend .recommItem .items .notify{
+    font-size: 12px;
+    color: #139136;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
 }
 .container .recommend .recommItem .items:nth-child(1),
 .container .recommend .recommItem .items:nth-child(2),
@@ -970,6 +907,7 @@ body.dark{
     transition: color 0.5s, background 0.5s;
     border: 1px solid #139136;
     border-radius: 3px;
+    outline: none;
 }
 .container .recommend .recommItem .items .detail .action button:hover,
 .container .category .tabContainer .top .tops .detail .action button:hover,

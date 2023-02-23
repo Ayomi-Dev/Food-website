@@ -1,9 +1,6 @@
 //Displaying Cart page
 let cartPage = document.querySelector('.cartPage')
 let cartIcon = document.querySelectorAll('.cartBtn');
-let favPage = document.querySelector('.favoritePage');
-
-
 
 cartIcon.forEach((button) => {
     button.addEventListener('click', ()=>{
@@ -430,7 +427,7 @@ const showTopRated = () => {
                     <button id="${id}">Add to Cart</button>
                 </div>
             </div>
-            <span class="notify"></span>
+            <div class="notify"></div>
         </div>`
     }).join('');
 }
