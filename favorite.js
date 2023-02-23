@@ -24,22 +24,22 @@ window.onload = () => {
 
 
 
-// //ANIMATION SCROLL FOR EACH ELEMENTS
-// ScrollReveal({
-//     reset: true,
-//     distance: '60px',
-//     duration: 2500,
-//     delay: 400
+//ANIMATION SCROLL FOR EACH ELEMENTS
+ScrollReveal({
+    reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 400
 
-// });
-// ScrollReveal().reveal('.intro-text, .sect1, .col1 img', { delay: 400, origin: 'left' });
-// ScrollReveal().reveal('.img img', { delay: 500, origin: 'right' });
-// ScrollReveal().reveal('.img .text, .col2 h2, .inner, .carousel, .segment .image', { delay: 600, origin: 'bottom' });
-// ScrollReveal().reveal('.recommend h2, .catMenu h2', { delay: 500, origin: 'left' });
-// ScrollReveal().reveal('.items', { delay: 600, origin: 'left', interval: 200 });
-// ScrollReveal().reveal('.seeMore, .sect2 h1, .sect2 p', { delay: 600, origin: 'bottom' });
-// ScrollReveal().reveal('.tabs li', { delay: 500, origin: 'bottom', interval: 200 });
-// ScrollReveal().reveal('.segment .text', { delay: 500, origin: 'top'});
+});
+ScrollReveal().reveal('.intro-text, .sect1, .col1 img', { delay: 400, origin: 'left' });
+ScrollReveal().reveal('.img img', { delay: 500, origin: 'right' });
+ScrollReveal().reveal('.img .text, .col2 h2, .inner, .carousel, .segment .image', { delay: 600, origin: 'bottom' });
+ScrollReveal().reveal('.recommend h2, .catMenu h2', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.items', { delay: 600, origin: 'left', interval: 200 });
+ScrollReveal().reveal('.seeMore, .sect2 h1, .sect2 p', { delay: 600, origin: 'bottom' });
+ScrollReveal().reveal('.tabs li', { delay: 500, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.segment .text', { delay: 500, origin: 'top'});
 
 
 
