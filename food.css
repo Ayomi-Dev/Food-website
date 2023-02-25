@@ -920,12 +920,12 @@ body.dark{
     background: #139136;
     color: #fff;
 }
-.container .recommend .recommItem .items  span,
-.container .category .tabContainer .top .tops  span,
-.container .category .tabContainer .snacks .tops  span,
-.container .category .tabContainer .cake .tops  span,
-.container .category .tabContainer .pasta .tops  span,
-.container .category .tabContainer .african .tops  span
+
+.container .category .tabContainer .top .tops  .notify,
+.container .category .tabContainer .snacks .tops  .notify,
+.container .category .tabContainer .cake .tops  .notify,
+.container .category .tabContainer .pasta .tops  .notify,
+.container .category .tabContainer .african .tops  .notify
 {   
     margin: 15px 0 0 10px;
     width: 100%;
