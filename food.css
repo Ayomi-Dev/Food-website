@@ -1291,6 +1291,7 @@ body.dark{
 }
 /* SMALLER SCREEN STYLING FOR CATEGORY SECTION */
 @media screen and (min-width: 1200px) {
+    
     .container .category .tabContainer .top,
 .container .category .tabContainer .snacks,
 .container .category .tabContainer .cake,
@@ -1363,6 +1364,11 @@ body.dark{
         font-size: 12px;
         margin: 0 5px;
         height: 30px;
+    }
+}
+@media screen and (max-width: 518px){
+    .container .category{
+        height: 200vh;
     }
 }
 @media  screen and (max-width: 414px) {
