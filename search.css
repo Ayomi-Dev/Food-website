@@ -148,38 +148,22 @@
     border-radius: 10px;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
 }
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1020px) {
     .aboutUs{
         height: 70vh;
         margin-top: 10px;
     }
 }
-@media screen and (max-width: 1000px) {
-    .aboutUs{
-        height: 40vh;
-    }
-}
-@media screen and (max-width: 768px) {
-    .aboutUs{
-        height: 50vh;
-    }
+@media screen and (max-width: 780px) {
     .aboutUs .segment .image{
         width: 50%;
-    }
-}
-@media screen and (max-width: 540px) {
-    .aboutUs{
-        height: 70vh;
-    }
-    .aboutUs .segment{
-        width: 100%;
-        margin: 0;
     }
     .aboutUs .segment .text{
         transform: translateX(0);
     }
-    .aboutUs .segment .image{
-        width: 60%;
+    .aboutUs .segment{
+        width: 100%;
+        margin: 0;
     }
 }
 @media screen and (max-width: 500px) {
